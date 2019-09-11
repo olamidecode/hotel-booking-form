@@ -1,7 +1,12 @@
-html { 
-    background: url(img/hotel1.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
+/* slide show styling */
+#slide {
+  display: block;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+/* form styling */
+.form{
+  text-align: center;
+  background-color: #333;
+  color: whitesmoke;
+}
