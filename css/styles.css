@@ -1,4 +1,7 @@
 /* slide show styling */
+html{
+  scroll-behavior: smooth;
+}
 #slide {
   display: block;
   margin-left: 200px;
@@ -9,4 +12,12 @@
   text-align: center;
   background-color: #333;
   color: whitesmoke;
+}
+
+#formbooking{
+  text-align: center;
+  background-color: #333;
+  color: whitesmoke;
+  margin-left: 200px;
+   margin-right: 200px;
 }
