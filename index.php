@@ -4,6 +4,7 @@ include ('user.php');
 include('connection.php');
 include 'inc/header.php';
 ?>
+   
     <div class="container">
         <div class="row">
         <div class="col-lg-6 mx-2 my-2 bg-transparent form-col">
