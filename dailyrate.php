@@ -16,9 +16,9 @@ function dailyRateQuery($hotelQuery){
     }
 }
 //return the amount of hotel stay
-function amountDue($check_in,$check_outDate,$hotelDailyRate){
+function amountDue($check_in,$check_out,$hotelDailyRate){
     $check_in = strtotime($check_in);
-    $check_out = strtotime($check_outDate);
+    $check_out = strtotime($check_out);
     $hotelstay =($check_out-$check_in)/(60*60*24);
     $amountdue   =   $hotelstay * $hotelDailyRate;
     return $amountdue;
@@ -76,7 +76,7 @@ function deleteEntry($entryId,$first_name,$last_name,$hotel_name,$check_in,$chec
     if($conn->query($sql_delete)){
         echo "deleted";
         $sqlInsert = "INSERT INTO 
-          records (first_name, last_name, hotel_name, check_in, check_out_date,amountdue)
+          records (first_name, last_name, hotel_name, check_in, check_out,amountdue)
            VALUES ('$first_name', '$last_name', '$hotel_name','$check_in','$check_out','$amountdue')";
 
          if ($conn->query($sqlInsert) === TRUE) {

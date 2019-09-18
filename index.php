@@ -90,7 +90,7 @@ include 'inc/header.php';
                     $existBooking   = $tableSearch_result->fetch_assoc();
                     $existingBooking_id = $existBooking['id'];
                     $existBooking_first_name = $existBooking['first_name'];
-                    $existBooking_last_name = $existBooking['second_name'];
+                    $existBooking_last_name = $existBooking['last_name'];
                     $existBooking_hotel = $existBooking['hotel_name'];
                     $existBooking_check_in =$existBooking['check_in'];
                     $existBooking_check_out =$existBooking['check_out'];
